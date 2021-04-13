@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#123456"
+    tools:context=".TimerActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Timer"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/text_timer"
+                android:textSize="80sp"
+                android:text="00:00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/text_hour"
+                android:layout_weight="1"
+                android:text="Hours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:id="@+id/text_minute"
+                android:layout_weight="1"
+                android:text="Minutes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/text_second"
+                android:layout_weight="1"
+                android:text="Seconds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <NumberPicker
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/number_picker_hour"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </NumberPicker>
+
+            <NumberPicker
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/number_picker_minute"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </NumberPicker>
+
+            <NumberPicker
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/number_picker_second"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </NumberPicker>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                app:backgroundTint="@null"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#ffffff"
+                android:backgroundTint="	#808080"
+                android:id="@+id/button_left"/>
+
+            <Button
+                app:backgroundTint="@null"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_marginHorizontal="100dp"
+                android:backgroundTint="#4F5370"
+                android:textColor="#ffffff"
+                android:id="@+id/button_center" />
+
+            <Button
+                app:backgroundTint="@null"
+                android:background="@drawable/button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="Reset"
+                android:textColor="#ffffff"
+                android:backgroundTint="#834343"
+                android:id="@+id/button_right" />
+
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Pause"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:backgroundTint="#4F5370"-->
+<!--                android:id="@+id/button_left"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Start"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:backgroundTint="#4F5370"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:id="@+id/button_center" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="Reset"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:backgroundTint="#4F5370"-->
+<!--                android:id="@+id/button_right" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
